@@ -1,0 +1,56 @@
+body {
+    transition: padding 0.3s;
+    padding: 0;
+    padding-top: 4rem;
+}
+
+#mdc-top-app-bar {
+    display: block;
+    background-color: rgb(var(--bg-cards));
+    color: rgba(var(--text-color), var(--opacity-primary));
+    box-shadow: var(--z-axis-4-shadow);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 4rem;
+    transition: top 0.6s, box-shadow 0.3s, transform 0.2s, opacity 0.2s, margin 0.3s, left 0.3s, right 0.3s;
+    z-index: 4000;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#mdc-top-app-bar .row {
+    height: 4rem;
+}
+
+#mdc-top-app-bar .title {
+    display: inline-block;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    letter-spacing: 0.0125em;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#mdc-top-app-bar .logo {
+    height: 2.5rem;
+    display: inline-block;
+}
+
+#mdc-top-app-bar .logo > img,
+#mdc-top-app-bar .logo > svg {
+    max-height: 100%;
+    width: auto;
+}
+
+#mdc-page-content.overlay-scroller {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
