@@ -1,0 +1,160 @@
+.mdc-fab {
+    position: fixed;
+    display: inline-block;
+    text-align: right;
+    z-index: 12000;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+html[dir="ltr"] .mdc-fab,
+html[dir] .mdc-fab[dir="ltr"] {
+    right: 1rem;
+    left: auto;
+}
+
+html[dir="rtl"] .mdc-fab,
+html[dir] .mdc-fab[dir="rtl"] {
+    right: auto;
+    left: 1rem;
+}
+
+.mdc-fab > .mdc-fab-button {
+    position: relative;
+    margin: 0;
+    border: none;
+    outline: none;
+    border-radius: 3.5rem;
+    color: rgba(var(--text-color), var(--opacity-primary));
+    cursor: pointer;
+    box-shadow: var(--z-axis-6-shadow);
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.053571em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem;
+    overflow: hidden;
+    vertical-align: middle;
+    transition: all 0.2s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    max-width: 3.5rem;
+    max-height: 3.5rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mdc-fab > .mdc-fab-button.mini {
+    border-radius: 2.5rem;
+    padding: 0.5rem;
+}
+
+.mdc-fab > .mdc-fab-button.extended {
+    max-width: 34rem;
+    padding: 0.75rem 1.25rem;
+}
+
+.mdc-fab > .mdc-fab-button:focus,
+.mdc-fab > .mdc-fab-button:active {
+    box-shadow: var(--z-axis-12-shadow);
+}
+
+.mdc-fab > .mdc-fab-button::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    transition: all 0.2s;
+    background-color: rgb(var(--text-color));
+    opacity: 0;
+}
+
+.mdc-fab > .mdc-fab-button:hover::before {
+    opacity: var(--opacity-hover);
+}
+
+.mdc-fab > .mdc-fab-button:focus::before {
+    opacity: var(--opacity-focus);
+}
+
+.mdc-fab > .mdc-fab-button:active::before {
+    opacity: var(--opacity-pressed);
+}
+
+.mdc-fab > .mdc-fab-button.disabled, .mdc-fab > .mdc-fab-button[disabled], .mdc-fab > .mdc-fab-button:disabled {
+    cursor: default;
+    color: rgba(var(--text-color), var(--opacity-hint));
+    background-color: rgba(var(--text-color), var(--opacity-divider));
+}
+
+.mdc-fab > .mdc-fab-button.disabled::before, .mdc-fab > .mdc-fab-button[disabled]::before, .mdc-fab > .mdc-fab-button:disabled::before {
+    display: none;
+}
+
+.mdc-fab > .mdc-fab-button > .icon {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mdc-fab > .mdc-fab-button.extended > .icon {
+    margin-left: -0.5rem;
+    margin-right: 0.5rem;
+}
+
+html[dir="ltr"] .mdc-fab > .mdc-fab-button.extended > .icon,
+html[dir] .mdc-fab[dir="ltr"] > .mdc-fab-button.extended > .icon {
+    margin-left: -0.5rem;
+    margin-right: 0.5rem;
+}
+
+html[dir="rtl"] .mdc-fab > .mdc-fab-button.extended > .icon,
+html[dir] .mdc-fab[dir="rtl"] > .mdc-fab-button.extended > .icon {
+    margin-left: 0.5rem;
+    margin-right: -0.5rem;
+}
+
+.mdc-fab > .mdc-fab-button > .label {
+    display: inline-block;
+    overflow: hidden;
+    max-height: 1.5rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    max-width: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.mdc-fab > .mdc-fab-button.mini > .label {
+    display: none;
+}
+
+.mdc-fab > .mdc-fab-button.extended > .label {
+    max-width: 32rem;
+    visibility: visible;
+    opacity: 1;
+}
+
+.mdc-fab > .mdc-fab-button.disabled > .icon, .mdc-fab > .mdc-fab-button[disabled] > .icon, .mdc-fab > .mdc-fab-button:disabled > .icon,
+.mdc-fab > .mdc-fab-button.disabled > .label, .mdc-fab > .mdc-fab-button[disabled] > .label, .mdc-fab > .mdc-fab-button:disabled > .label {
+    color: rgba(var(--text-color), var(--opacity-hint));
+}

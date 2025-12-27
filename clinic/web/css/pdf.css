@@ -1,0 +1,273 @@
+body {
+    font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #212121;
+}
+
+.arabic-font {
+    direction: rtl;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+h1, .mdt-h1 {
+    font-size: 92pt;
+    letter-spacing: -1.5pt;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2, .mdt-h2 {
+    font-size: 56pt;
+    letter-spacing: -0.5pt;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h3, .mdt-h3 {
+    font-size: 44pt;
+    letter-spacing: 0pt;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h4, .mdt-h4 {
+    font-size: 30pt;
+    letter-spacing: 0.25pt;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h5, .mdt-h5 {
+    font-size: 20pt;
+    letter-spacing: 0pt;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h6, .mdt-h6 {
+    font-size: 16pt;
+    letter-spacing: 0.15pt;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.mdt-subtitle, .mdt-subtitle-1 {
+    font-size: 12pt;
+    letter-spacing: 0.15pt;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.mdt-subtitle-2 {
+    font-size: 10pt;
+    letter-spacing: 0.1pt;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.mdt-body, .mdt-body-1 {
+    font-size: 12pt;
+    letter-spacing: 0.5pt;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.mdt-body-2 {
+    font-size: 10pt;
+    letter-spacing: 0.25pt;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.mdt-caption {
+    font-size: 8pt;
+    letter-spacing: 0.4pt;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.mdt-overline {
+    font-size: 6pt;
+    letter-spacing: 1.5pt;
+    font-weight: 400;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+p {
+    margin: 0 0 6pt;
+    font-size: 12pt;
+    letter-spacing: 0.5pt;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.divider {
+    height: 0;
+    border-top: solid 1pt #e0e0e0;
+}
+
+.border {
+    border: solid 1pt #e0e0e0;
+}
+
+.border-top {
+    border-top: solid 1pt #e0e0e0;
+}
+
+.border-right {
+    border-right: solid 1pt #e0e0e0;
+}
+
+.border-bottom {
+    border-bottom: solid 1pt #e0e0e0;
+}
+
+.border-left {
+    border-left: solid 1pt #e0e0e0;
+}
+
+.text-primary {
+    color: #212121;
+}
+
+.text-secondary {
+    color: #666666;
+}
+
+.text-hint {
+    color: #9e9e9e;
+}
+
+.text-divider {
+    color: #e0e0e0;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.salamat-footer-vat {
+    float: left;
+    width: 6cm;
+    height: auto;
+    padding-top: 0.4cm;
+    font-size: 8pt;
+    letter-spacing: 0.4pt;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-transform: uppercase;
+    color: #9e9e9e;
+}
+
+.salamat-footer-logo {
+    float: right;
+    width: 2cm;
+    height: auto;
+}
+
+.salamat-footer-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+    display: table;
+    content: " ";
+}
+
+.clearfix:after,
+.row:after {
+    clear: both;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-4p5, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    position: relative;
+    min-height: 1px;
+    float: left;
+}
+  
+.col-1 {
+    width: 8.333333%;
+}
+  
+.col-2 {
+    width: 16.666666%;
+}
+  
+.col-3 {
+    width: 25%;
+}
+  
+.col-4 {
+    width: 33.333333%;
+}
+
+.col-4p5 {
+    width: 37.5%;
+}
+  
+.col-5 {
+    width: 41.666666%;
+}
+  
+.col-6 {
+    width: 50%;
+}
+  
+.col-7 {
+    width: 58.333333%;
+}
+  
+.col-8 {
+    width: 66.666666%;
+}
+  
+.col-9 {
+    width: 75%;
+}
+  
+.col-10 {
+    width: 83.333333%;
+}
+  
+.col-11 {
+    width: 91.666666%;
+}
+  
+.col-12 {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr {
+    padding: 0;
+    margin: 0;
+    border: solid 1pt #e0e0e0;
+}
+
+table td {
+    border: solid 1pt #e0e0e0;
+    padding: 4pt;
+}

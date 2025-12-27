@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.patient-placeholder-st0{fill:#9E9D24;}
+	.patient-placeholder-st1{fill:#80801D;}
+	.patient-placeholder-st2{fill:#FCD088;}
+	.patient-placeholder-st3{fill:#DDAB62;}
+	.patient-placeholder-st4{fill:#FFEDB5;}
+	.patient-placeholder-st5{fill:#E8CF89;}
+	.patient-placeholder-st6{fill:#545454;}
+	.patient-placeholder-st7{fill:#2B2B2B;}
+</style>
+<circle class="patient-placeholder-st0" cx="256" cy="256" r="256"/>
+<path class="patient-placeholder-st1" d="M507.8,302.5L311.3,114.7l-46.7,254.1l112.6,112.6C444.4,445.3,493.6,380,507.8,302.5z"/>
+<rect x="213.3" y="293.7" class="patient-placeholder-st2" width="85.3" height="104.3"/>
+<rect x="256" y="293.7" class="patient-placeholder-st3" width="42.7" height="104.3"/>
+<path class="patient-placeholder-st4" d="M347.5,205.4c0.5-4.2,0.7-8.4,0.7-12.5c0-54-41.3-97.7-92.2-97.7s-92.2,43.8-92.2,97.7c0,4.1,0.2,8.3,0.7,12.5
+	c-8.9,2.3-13.2,16.1-9.5,30.8c3.7,14.8,14,24.9,23,22.7c0.8-0.2,1.6-0.5,2.3-0.9c16.7,33.5,44.4,60.6,75.7,60.6s59-27.1,75.7-60.6
+	c0.7,0.4,1.5,0.7,2.3,0.9c9,2.3,19.3-7.9,23-22.7C360.7,221.5,356.5,207.8,347.5,205.4z"/>
+<path class="patient-placeholder-st5" d="M347.5,205.4c0.5-4.2,0.7-8.4,0.7-12.5c0-54-41.3-97.7-92.2-97.7v223.4c31.3,0,59-27.1,75.7-60.6
+	c0.7,0.4,1.5,0.7,2.3,0.9c9,2.3,19.3-7.9,23-22.7C360.7,221.5,356.5,207.8,347.5,205.4z"/>
+<path class="patient-placeholder-st6" d="M357.8,362l-45.2-9l-8-11.7c-1.5-2.2-4.3-3-6.8-2l-0.2,0.1c-23.2,22.3-60,22.3-83.1-0.1l0,0
+	c-2.4-1.1-5.2-0.3-6.8,1.9l-8.2,11.7l-45.2,9c-23,4.6-39.6,24.8-39.6,48.3v59.2c40.4,26.9,89,42.6,141.3,42.6s100.9-15.7,141.4-42.6
+	v-59.2C397.4,386.8,380.8,366.6,357.8,362z"/>
+<path class="patient-placeholder-st7" d="M357.8,362l-45.2-9l-8-11.7c-1.5-2.2-4.3-3-6.8-2l-0.2,0.1C286,350.6,271,356.2,256,356.2V512c0,0,0,0,0,0
+	c52.3,0,100.9-15.7,141.4-42.6v-59.2C397.4,386.8,380.8,366.6,357.8,362z"/>
+</svg>

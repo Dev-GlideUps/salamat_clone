@@ -1,0 +1,82 @@
+#dental-chart {
+    background-color: #341212;
+    border-radius: 0.25rem;
+    border: solid 0.0625rem rgba(var(--text-color), var(--opacity-divider));
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    max-width: 1074px;
+    text-align: center;
+}
+
+#dental-chart .upper-teeth,
+#dental-chart .lower-teeth {
+    display: inline-block;
+}
+
+#dental-chart:after,
+#dental-chart .upper-teeth:after,
+#dental-chart .lower-teeth:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+#dental-chart .tooth-block {
+    display: block;
+    position: relative;
+    float: left;
+    text-decoration: none;
+}
+
+#dental-chart .tooth-block .tooth-number {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 100%;
+    margin: 0.5rem auto;
+}
+
+#dental-chart .tooth-block:hover .tooth {
+    opacity: var(--opacity-hint);
+}
+
+#dental-chart .tooth-block:hover .tooth-number {
+    background-color: rgba(var(--salamat-color), var(--opacity-hint));
+}
+
+#dental-chart .tooth-block.active .tooth-number {
+    background-color: rgb(var(--salamat-color));
+}
+
+#dental-chart .tooth-block .tooth {
+    height: 15rem;
+}
+
+#dental-chart .tooth-block .tooth > svg {
+    height: 100%;
+    width: auto;
+}
+
+#dental-chart .tooth-block .tooth .nerve,
+#dental-chart .tooth-block .tooth .screw,
+#dental-chart .tooth-block .tooth .filler,
+#dental-chart .tooth-block .tooth .drilled,
+#dental-chart .tooth-block .tooth .crown,
+#dental-chart .tooth-block .tooth.filled .org,
+#dental-chart .tooth-block .tooth.root-canal .org,
+#dental-chart .tooth-block .tooth.implant .inner,
+#dental-chart .tooth-block .tooth.implant .nerve {
+    display: none;
+}
+
+#dental-chart .tooth-block .tooth.filled .filler,
+#dental-chart .tooth-block .tooth.filled .drilled,
+#dental-chart .tooth-block .tooth.root-canal .nerve,
+#dental-chart .tooth-block .tooth.root-canal .drilled,
+#dental-chart .tooth-block .tooth.crown .crown,
+#dental-chart .tooth-block .tooth.implant .screw {
+    display: inline;
+}
+
+#dental-chart .tooth-block .tooth.removed > svg {
+    opacity: var(--opacity-divider);
+}

@@ -1,0 +1,20 @@
+Options -Indexes
+IndexIgnore */*
+
+<IfModule mod_rewrite.c>
+  Options FollowSymlinks
+  RewriteEngine on
+  RewriteCond %{REQUEST_URI} !^public
+  RewriteRule ^(/.+)?$ web/$1 [L,PT]
+  RewriteRule ^(.+)?$ web/$1 [L,PT]
+  RewriteRule ^(.*)$ web/$1 [L]
+</IfModule>
+
+# Deny accessing below extensions
+<Files ~ "(.json|.lock|.git)">
+Order allow,deny
+Deny from all
+</Files>
+
+# Deny accessing dot files
+RewriteRule (^\.|/\.) - [F]
