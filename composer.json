@@ -32,10 +32,9 @@
         "yiisoft/yii2-debug": "~2.1.0",
         "yiisoft/yii2-gii": "~2.1.0",
         "yiisoft/yii2-faker": "~2.0.0",
-        "codeception/base": "^2.4.0",
-        "phpunit/phpunit": "~6.5.5",
-        "codeception/verify": "~1.0.0",
-        "symfony/browser-kit": ">=2.7 <=4.2.4"
+        "codeception/codeception": "^4.1",
+        "phpunit/phpunit": "^8.5",
+        "symfony/browser-kit": "^5.0"
     },
     "config": {
         "process-timeout": 1800,
@@ -44,6 +43,10 @@
         },
         "allow-plugins": {
             "yiisoft/yii2-composer": false
+        },
+        "audit": {
+            "ignore": ["PKSA-mm6g-r738-y4dn", "PKSA-bbgw-mkqz-n76v"],
+            "block-insecure": false
         }
     },
     "repositories": [

@@ -1,38 +1,64 @@
-version: '3.2'
+version: '3.8'
 
 services:
-
-  frontend:
-    build: frontend
+  # Clinic PHP Apache Service
+  clinic:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: salamatbh_clinic
+    restart: unless-stopped
     ports:
-      - 20080:80
+      - "8080:80"
     volumes:
-      # Re-use local composer cache via host-volume
-      - ~/.composer-docker/cache:/root/.composer/cache:delegated
-      # Mount source-code for development
-      - ./:/app
+      - .:/var/www/html
+      - ./docker/php/php.ini:/usr/local/etc/php/conf.d/custom.ini
+    depends_on:
+      - db
+    networks:
+      - salamatbh_network
 
-  backend:
-    build: backend
+  # MySQL Service
+  db:
+    image: mysql:8.0
+    container_name: salamatbh_db
+    restart: unless-stopped
     ports:
-      - 21080:80
-    volumes:
-      # Re-use local composer cache via host-volume
-      - ~/.composer-docker/cache:/root/.composer/cache:delegated
-      # Mount source-code for development
-      - ./:/app
-
-  mysql:
-    image: mysql:5.7
+      - "3307:3306"
     environment:
-      - MYSQL_ROOT_PASSWORD=verysecret
-      - MYSQL_DATABASE=yii2advanced
-      - MYSQL_USER=yii2advanced
-      - MYSQL_PASSWORD=secret
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: salamatbh
+      MYSQL_USER: salamatbh
+      MYSQL_PASSWORD: salamatbh123
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - salamatbh_network
+    command: --default-authentication-plugin=mysql_native_password
 
-  #pgsql:
-  #  image: postgres:9.5
-  #  environment:
-  #    - POSTGRES_DB=yii2advanced
-  #    - POSTGRES_USER=yii2advanced
-  #    - POSTGRES_PASSWORD=secret
+  # phpMyAdmin Service
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: salamatbh_phpmyadmin
+    restart: unless-stopped
+    ports:
+      - "8090:80"
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: root
+      UPLOAD_LIMIT: 100M
+      MAX_EXECUTION_TIME: 600
+      MEMORY_LIMIT: 256M
+    depends_on:
+      - db
+    networks:
+      - salamatbh_network
+
+networks:
+  salamatbh_network:
+    driver: bridge
+
+volumes:
+  db_data:
+    driver: local

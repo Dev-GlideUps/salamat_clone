@@ -34,12 +34,12 @@ AppAsset::register($this);
     <link rel="icon" type="image/png" sizes="96x96" href="<?= Yii::getAlias('@web/app_icon/favicon-96x96.png') ?>">
     <link rel="icon" type="image/png" sizes="16x16" href="<?= Yii::getAlias('@web/app_icon/favicon-16x16.png') ?>">
     <link rel="manifest" href="<?= Yii::getAlias('@web/app_icon/manifest.json') ?>">
-    <meta name="msapplication-TileColor" content="#9E9D24">
+    <meta name="msapplication-TileColor" content="#009688">
     <meta name="msapplication-TileImage" content="<?= Yii::getAlias('@web/app_icon/ms-icon-144x144.png') ?>">
-    <meta name="theme-color" content="#9E9D24">
+    <meta name="theme-color" content="#009688">
 
     <?php $this->registerCsrfMetaTags() ?>
-    <title><?= "Salamat - ".Html::encode($this->title) ?></title>
+    <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
 
@@ -140,9 +140,11 @@ $this->registerJs($script, $this::POS_END);
     ?>
 </div>
 <div class="mdc-drawer-scrim"></div>
-<div id="mdc-top-app-bar" class="bg-salamat-secondary">
+<div id="mdc-top-app-bar">
     <button class="material-icon nav-icon">menu</button>
-    <?= Html::img(Yii::getAlias('@web/img/logo.png'), ['class' => 'salamat-logo']) ?>
+    <div class="app-icon">
+        <span class="material-icon">local_hospital</span>
+    </div>
 </div>
 
 <div id="mdc-page-content" class="nano">
