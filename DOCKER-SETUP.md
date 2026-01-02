@@ -33,7 +33,7 @@ Complete guide to run Salamat BH Clinic application on Docker.
 
 ```powershell
 cd C:\xampp\htdocs
-git clone https://github.com/your-username/salamatbh.com.git
+git clone https://github.com/Dev-GlideUps/salamat_clone.git
 cd salamatbh.com
 ```
 
@@ -41,7 +41,7 @@ cd salamatbh.com
 
 ```bash
 cd ~/Projects
-git clone https://github.com/your-username/salamatbh.com.git
+git clone https://github.com/Dev-GlideUps/salamat_clone.git
 cd salamatbh.com
 ```
 
@@ -176,7 +176,7 @@ docker exec -it salamatbh_clinic php yii migrate --interactive=0
 
 ```powershell
 # Copy SQL file to container
-docker cp "C:\path\to\salamat_db.sql" salamatbh_db:/tmp/database.sql
+docker cp "C:\xampp\htdocs\salamatbh\salamatbh.com" salamatbh_db:/tmp/database.sql
 
 # Import the database
 docker exec -it salamatbh_db mysql -u root -proot salamatbh -e "source /tmp/database.sql"

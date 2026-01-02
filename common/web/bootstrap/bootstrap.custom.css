@@ -5,10 +5,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
-    --salamat-color: 158, 157, 36;
-    --salamat-dark: 128, 128, 29;
-    --salamat-light: 199, 199, 46;
-    --salamat-secondary: 33, 33, 33;
+    --salamat-color: 0, 150, 136;
+    --salamat-dark: 0, 121, 107;
+    --salamat-light: 77, 182, 172;
+    --salamat-secondary: 38, 50, 56;
 
     --bg-status-bar: 224, 224, 224;
     --bg-app-bar: 245, 245, 245;
